@@ -1,0 +1,9 @@
+port pandas as pd # we are importing panda library
+
+#Creating a Data Frame
+# creates a Data frame(a table like structure)
+#The data frame contains one row with value AAAA as name ,age, language
+df = pd.DataFrame({"Name":["Sharvi"],"Age":[22],"Language":["Hindi"]})
+df.to_csv("data1_pandas.csv",index=False)
+df_read = pd.read_csv("data1_pandas.csv")
+print(df_read)
